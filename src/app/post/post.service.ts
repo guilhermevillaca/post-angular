@@ -11,6 +11,11 @@ export class PostService {
     this.http = new HttpClient(handler);
    }
 
+
+   //gerador de json aleatorio
+   //https://json-generator.com/
+
+   //site que pega o json e cria api com o json
    //https://dummyjson.com/c/0071-2f31-4533-b30e
   public buscaPosts(){
     return this.http.get("https://dummyjson.com/c/0071-2f31-4533-b30e").toPromise();
