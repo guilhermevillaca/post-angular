@@ -1,0 +1,24 @@
+<p>post works!</p>
+
+<p>Está funcionando</p>
+
+<button (click)="buscarPosts()">Buscar</button>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>About</th>
+        <th>Email</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let res of resposta">
+        <td>{{res.about}}</td>
+        <td>{{res.email}}</td>
+        <td>{{res.name}}</td>
+      </tr>
+    </tbody>
+
+  </table>
